@@ -12,12 +12,8 @@ body {
 
 .aviao {
     display: flex;
-    box-sizing: border-box;
     position: absolute;
-    align-items: center;
-    justify-content: center;
-    right: 52%; 
-    /* right: 800px; */
+    right: 54%;
     z-index: 2;
 }
 
@@ -98,4 +94,12 @@ body {
     -moz-border-radius: 4px;
     border: 1px solid #c33b00;
     text-decoration: none;
+}
+
+@media screen and (min-width: 1400px ){
+    
+    .aviao{
+        right: 52%; 
+    }
+    
 }
