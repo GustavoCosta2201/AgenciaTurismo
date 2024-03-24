@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <?php include ('./php/config.php');  ?>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-ExploreX</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="php/config.php">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="img/cargo.ico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/cargo.png" alt="">
+                    ExploreX
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Trip.html">Passeios</a></li>
+                        <li><a href="About.html">Sobre</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <div class="page-form">
+        <section>
+            <div class="aviao">
+                <img src="../img/AviaoGol.png" alt="">
+            </div>
+        </section>
+        <form action="../php/LoginInsert.php" method="POST" class="FormLogin">
+
+            <h1>Login - ExploreX</h1>
+
+            <label for="USUARIO">Usuário</label>
+            <input type="text" placeholder="Digite seu nome de Usuário" autofocus="true" name="USUARIO">
+
+            <label for="SENHA">Senha</label>
+            <input type="password" placeholder="Digite sua senha" name="SENHA">
+
+            <label for="EMAIL">E-mail</label>
+            <input type="email" placeholder="Digite seu E-mail" name="EMAIL">
+
+            <input type="submit" value="Acessar" class="btn" name="botao">
+
+        </form>
+    </div>
+    <div class="popup">
+        <div class="popup-container">
+            <img class="popup-img" src="../img/verified.gif" alt="" >
+            <h1 class="popup-h1">Sucesso!</h1>
+            <p class="popup-p">Seu cadastro foi efetuado com Sucesso!!</p>
+            <a class="popup-link" href="index.html">Confirmar</a>
+        </div>
+    </div>
+    <script src="../js/Login.js">
+  
+    </script>
+</body>
+
+</html>

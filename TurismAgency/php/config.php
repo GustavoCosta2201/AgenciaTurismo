@@ -1,14 +1,19 @@
 <?php
 
-$hostName = "localhost";
-$dataBase = "turismagency";
-$user = "root";
-$password = "";
+$serverName = "GustavoPC";
+$connectionOptions = array(
+	"Database" => "TURISMAGENCY",
+	"Uid" => "sa",
+	"PWD" => "masterkey"
+);
 
-$mysqli = new mysqli($hostName, $user, $password, $dataBase);
-    
-	if ($mysqli->connect_errno)
-	{
-	echo "Falha ao conectar:(" .$mysqli->connect_errno. "(" .$mysqli->connect_errno;
-	}
+$conn = sqlsrv_connect($serverName, $connectionOptions);
+
+if ($conn === false) {
+	echo "Não foi possível se conectar ao Banco de Dados" and die (print_r(sqlsrv_errors(), true));
+	
+}
+
+echo "Conexão estabelecida com sucesso.";
+
 ?>

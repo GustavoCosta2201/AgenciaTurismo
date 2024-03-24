@@ -15,7 +15,7 @@ window.onload = function () {
             document.querySelector('.popup').style.visibility = 'visible';
             document.querySelector('.popup').style.border = '2px solid red';
             paragrafo.innerHTML = 'Dados Incorretos, Tente novamente';
-            img.src = 'img/x.png';
+            img.src = '../img/x.png';
             h1.innerHTML = 'ERRO';
             btn.addEventListener('mouseenter', function () {
                 btn.style.border = '2px solid red';
@@ -29,7 +29,7 @@ window.onload = function () {
                 document.querySelector('.popup').style.visibility = 'visible';
                 document.querySelector('.popup').style.border = '2px solid yellow';
                 paragrafo.innerHTML = 'O Email já está em uso!';
-                img.src = 'img/warning.png';
+                img.src = '../img/alert.gif';
                 h1.innerHTML = 'ALERTA';
                 btn.addEventListener('mouseenter', function () {
                     btn.style.border = '2px solid yellow';

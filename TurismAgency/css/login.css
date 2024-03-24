@@ -14,6 +14,7 @@ body {
 }
 
 
+
 .aviao {
     display: flex;
     position: absolute;
@@ -106,10 +107,10 @@ body {
     border: 2px solid #2cff02;
     background-color: #f6f6f6;
     justify-content: center;
-    margin: 0 40%;
+    margin: 0 35%;
     width: 30%;
     position: absolute;
-    bottom: 100px;
+    bottom: 9%;
     visibility: hidden;
     transition: .3ms all linear;
 
@@ -121,7 +122,7 @@ body {
     align-items: center;
     padding: 40px;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     transition: .3ms all;
 }
 
@@ -144,7 +145,7 @@ body {
 }
 
 .popup-img{
-    width: 50px;
+    width: 75px;
 }
 
 @media screen and (min-width: 1400px ){
@@ -157,5 +158,17 @@ body {
         bottom: 250px;
         margin: 0 40% ;
     }
+
+    .popup-container{
+        gap: 30px;
+
+    }
     
+}
+
+@media screen and (min-width: 980px) and (max-width: 1300px){
+    .popup{
+        bottom: 230px;
+        margin: 0 42% ;
+    }
 }
