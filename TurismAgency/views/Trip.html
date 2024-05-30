@@ -35,7 +35,7 @@
                         <li><a href="Trip.html">Viagens</a></li>
                         <li><a href="About.html">Sobre</a></li>
                         <li><a href="Login.html">Login</a></li>
-                        <li><a href="cart.html"><img src="../img/car.png" alt=""></a></li>
+                        <li><a href="cart.php"><img src="../img/car.png" alt=""></a></li>
 
 
 
@@ -95,11 +95,6 @@
                             <label class="form-label" for="">Check-out</label>
                             <input class="form-inpt" type="date">
 
-                            <label class="form-label" for="">País</label>
-                            <input class="form-inpt" type="text" placeholder="Digite um Páis">
-
-                            <label class="form-label" for="">Cidade</label>
-                            <input class="form-inpt" type="Text" placeholder="Digite uma Cidade">
                         </form>
                         <button class="btn-trip">Venha descobrir e Explorar R$ 4.900</button>
                     </div>
@@ -138,11 +133,6 @@
                         <label class="form-label" for="">Check-out</label>
                         <input class="form-inpt" type="date">
 
-                        <label class="form-label" for="">País</label>
-                        <input class="form-inpt" type="text" placeholder="Digite um Páis">
-
-                        <label class="form-label" for="">Cidade</label>
-                        <input class="form-inpt" type="Text" placeholder="Digite uma Cidade">
                     </form>
                     <button class="btn-trip">Venha descobrir e Explorar R$ 5.020</button>
                 </div>
@@ -159,7 +149,7 @@
             </div>
 
             <div class="content">
-                <p class="mt-5 fs-3 text-uppercase">DESCUBRA O MUNDO ESCONDIDO</p>
+                <p class="mt-5 fs-3 text-uppercase" name="destino" >DESCUBRA O MUNDO ESCONDIDO</p>
                 <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
                 <div class="collum-right">
                     <div class="card card1">
@@ -174,19 +164,14 @@
                     <div class="card card4">
                         <h5>PRAIA</h5>
                     </div>
-                    <form action="" class="form-trip">
-                        <label class="form-label" for="">Check-in</label>
-                        <input class="form-inpt" type="date">
-                        <label class="form-label" for="">Check-out</label>
-                        <input class="form-inpt" type="date">
+                    <form action="../php/InsertViagem.php" method="post" class="form-trip">
+                        <label class="form-label" for="checkin">Check-in</label>
+                        <input class="form-inpt" type="date" name="checkin">
+                        <label class="form-label" for="checkout">Check-out</label>
+                        <input class="form-inpt" type="date" name="checkout">
 
-                        <label class="form-label" for="">País</label>
-                        <input class="form-inpt" type="text" placeholder="Digite um Páis">
-
-                        <label class="form-label" for="">Cidade</label>
-                        <input class="form-inpt" type="Text" placeholder="Digite uma Cidade">
                     </form>
-                    <button class="btn-trip">Venha descobrir e Explorar R$ 8.500</button>
+                    <button value="botao"  name="botaum"  class="btn-trip">Venha descobrir e Explorar R$ <strong name="valor" >8.500</strong></button>
                 </div>
             </div>
         </div>

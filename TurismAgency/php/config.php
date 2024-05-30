@@ -13,8 +13,5 @@ if ($conn === false) {
 	echo "Não foi possível se conectar ao Banco de Dados" and die (print_r(sqlsrv_errors(), true));
 	
 }
-
-echo "Conexão estabelecida com sucesso.";
-
 ?>
 
