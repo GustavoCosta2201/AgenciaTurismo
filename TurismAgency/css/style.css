@@ -17,7 +17,10 @@
     --color-main-tree: #121212;
 }
 
-
+.select-opt{
+    padding: 15px;
+    border-radius: 10px;
+}
 
 html {
     scroll-behavior: smooth;
@@ -97,6 +100,40 @@ header .container {
     margin: 0 1rem;
     color: var(--color-main-two);
 }
+
+/* dropdown */
+
+.dropdown ul li{
+    display: inline-block;
+    position: relative;
+    
+    
+} 
+.dropdown ul li a{
+    display: block;
+    color: #fff; 
+    
+}
+.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: block;
+    
+    
+  
+ 
+}
+
+
+.dropdownlist:hover .dropdown {
+    display: block;
+
+
+}
+
+
+
 
 .logo {
     display: flex;

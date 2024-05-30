@@ -2,15 +2,13 @@
 <html lang="pt-br">
 
 <head>
-    <?php include ('./php/config.php');  ?>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-ExploreX</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="php/config.php">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="img/cargo.ico">
+    <link rel="icon" href="../img/cargo.ico">
 </head>
 
 <body>
@@ -18,24 +16,23 @@
         <nav>
             <div class="container">
                 <div class="logo">
-                    <img src="img/cargo.png" alt="">
+                    <img src="../img/cargo.png" alt="">
                     ExploreX
                 </div>
 
                 <div class="links">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="Trip.html">Passeios</a></li>
+                        <li><a href="Trip.html">Viagens</a></li>
                         <li><a href="About.html">Sobre</a></li>
                         <li><a href="Login.html">Login</a></li>
+                        <li><a href="cart.html"><img src="../img/car.png" alt=""></a></li>
                     </ul>
-
                 </div>
-
             </div>
         </nav>
-
     </header>
+
     <div class="page-form">
         <section>
             <div class="aviao">
@@ -54,6 +51,9 @@
 
             <label for="EMAIL">E-mail</label>
             <input type="email" placeholder="Digite seu E-mail" name="EMAIL">
+
+            <label for="EMAIL">Data de Nascimento</label>
+            <input type="date" placeholder="Digite sua Data de Nascimento" name="nasc">
 
             <input type="submit" value="Acessar" class="btn" name="botao">
 

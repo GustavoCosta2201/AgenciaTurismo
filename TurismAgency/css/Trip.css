@@ -10,167 +10,102 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
-
-
-.section-video{
-    width: 20px;
-    margin: 2px;
-}
-
-.trip-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-
-}
-
-.container-cards {
-    width: 400px;
-    margin-top: 50px;
-
-
-}
-
-.cards {
-     background-color: darkgray;
-    background-image: url(../img/Praia.jpg);
-    background-size: cover;
-    padding: 140px 100px;
-    border-radius: 20px;
-    align-items: center;
-    color: var(--cor-branca);
-    cursor: pointer;
-    margin-bottom: 10px;
-
-}
-
-.card-titulo{
-    font-size: 14px;
-    font-family: var(--fonte-montserrat);
-}
-
-.card-h2{
-    font-size: 14px;
-}
-
-.card-p{
-    padding-bottom: 5px;
-    color: #717171;
-    font-family: var(--fonte-montserrat);
-}
-
-.card-btn{
-    background-color: rgb(248, 181, 132);
-    padding: 4px;
-    border-radius: 10px;
-    border: 2px solid #FFA500;
-    color: #000;
-    font-size: 14px;
-}
-.card-btn:hover{
-    background-color: transparent;
-    border: 2px solid #FFA500;
-    color:#FFA500;
-}
-
-.formvenda{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.formdate{
-    display: flex;
-    justify-content: center;
-    margin: 2em 15%;
-    border-radius: 50px;
-    border: 1px solid #0c0c0c34;
-    padding: 30px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.534);
-    
-   
-
-}
-
-.form-inpt{
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
-    flex-direction: row;
-    font-family: var(--fonte-montserrat);
-    
-}
-
-.form-inpt:focus{
-    outline: none; 
-    border-color: transparent;
-}
-
-.form-space{
-    display: block;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.form-space:hover{
-    background-color: #ffffff;
-    border-radius: 10px;
- }
-
-.form-label{
-    font-family: var(--fonte-montserrat)
-}
-
-.search{
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    width: 50px;
-    height: 90%;
-    border-radius: 50%; 
-    box-shadow: 10px #000;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.534);
+html{
+    overflow: hidden;
 }
 
 
 .video-container {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    z-index: -1; 
-    display: flex;
-    justify-content: center;
-    width: 850px;
-    align-items: center;
+    z-index: -1;
 }
 
 video {
-    width: 100% ;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    align-items: center;
 }
 
 .content {
     position: relative;
-    z-index: 1; /* Garante que o conteúdo apareça na frente do vídeo */
+    z-index: 1;
     color: #fff;
     text-align: center;
     padding: 20px;
+
 }
 
 .c-item {
     height: 100vh;
-  }
-  
-  .c-img {
+}
+
+.c-img {
     height: 100vh;
     object-fit: cover;
     filter: brightness(0.6);
-  }
+}
 
+.btn-trip {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 38%;
+    margin: 2em 0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    text-transform: uppercase;
+    font-family: var(--fonte-montserrat);
+    cursor: pointer;
+    outline: none;
+    border: 0px solid #fff;
+    background-color: #FFA500;
+    color: #000;
+    font-weight: 500;
+}
+
+.btn-trip:hover {
+    background-color: transparent;
+    border: 1px solid #FFA500;
+    color: var(--cor-branca);
+    letter-spacing: 5px;
+    width: 450px;
+    transition: 300ms all linear;
+}
+
+.form-trip{
+    display: flex;
+    justify-content: center;
+    
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.form-inpt{
+    border-radius: 10px;
+    border: 0px solid #000;
+    outline: none;
+}
+
+
+
+@media screen and (max-width: 1390px){
+    .btn-trip {
+        left: 39%;
+        
+    }
+    
+    .links ul {
+       display: flex;
+       margin-right: 160px;
+    }
+ 
+}

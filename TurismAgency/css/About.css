@@ -8,8 +8,9 @@ body {
 }
 
 .About{
-    background-image: url(../img/asa2.jpg);
-    background-size: cover;
+    background-image: url(../img/vista.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 100vh;
        
 }

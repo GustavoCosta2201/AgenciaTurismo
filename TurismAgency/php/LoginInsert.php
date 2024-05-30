@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include('config.php');
 
 if ($_POST['botao'] == 'Acessar') {
@@ -30,6 +32,7 @@ function ValidationLogin($usuario, $senha, $email, $conn)
 
             if ($resultInsert) {
                 header("Location: /AgenciaTurismo/TurismAgency/views/login.html?success=true");
+                $_SESSION['usuario'] = $usuario;
                 exit;
             } else {
                 header("Location: /AgenciaTurismo/TurismAgency/views/login.html?error=true");

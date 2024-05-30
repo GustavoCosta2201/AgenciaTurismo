@@ -8,22 +8,22 @@ const textCard = document.querySelector('p');
 const colorTitle = '#FFA500';
 
 card1.addEventListener('click', () =>{
-    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('img/pipa.jpg')";
+    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/pipa.jpg')";
     title.innerText = 'Pipa de Buggy';
     textCard.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate, repellendus provident. Soluta, id quis quas omnis, sed pariatur in officia perferendis, odit ea dolores minus accusamus vitae! Assumenda vero asperiores, tempore, incidunt consequuntur commodi';
 });
 card2.addEventListener('click', () =>{
-    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('img/NY.jpg')";
+    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/NY.jpg')";
     title.innerText = 'Nova York';
     textCard.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate, repellendus provident. Soluta, id quis quas omnis,'
 })
 card3.addEventListener('click', () =>{
-    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('img/parrachos.jpg')";
+    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/parrachos.jpg')";
     title.innerText = 'Parrachos de Maracajaú';
     textCard.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate, repellendus provident. Soluta, id quis quas omnis,Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate, repellendus provident. Soluta, id quis quas omnis,';
 })
 card4.addEventListener('click', () =>{
-    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('img/Praia.jpg')";
+    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/Praia.jpg')";
     title.innerText = 'Praia';
 
     textCard.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate, repellendus provident. Soluta, id quis quas omnis,Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate, repellendus provident. Soluta, id quis quas omnis,';

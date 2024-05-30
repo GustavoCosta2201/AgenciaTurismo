@@ -13,7 +13,9 @@ body {
 
 }
 
-
+html{
+    overflow: hidden;
+}
 
 .aviao {
     display: flex;
