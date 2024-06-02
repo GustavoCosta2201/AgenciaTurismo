@@ -252,32 +252,10 @@ header .container {
     display: inline-block;
     transition: .7s;
 }
-
-.card:hover {
-    transform: translateY(-3px);
-    opacity: .7;
-    transition: .5s;
-}
-
-.card h5 {
-    color: #fff;
-    transition: .5s;
-}
-
-.card:hover h5 {
-    color: var(--color-main-two);
-    transform: translateY(100px);
-    font-size: 20PX;
-}
-
 .card1 {
     background: url(../img/pipa.jpg);
     background-position: center;
     background-size: cover;
-}
-
-.card1 p {
-    display: none;
 }
 
 .card2 {
@@ -298,6 +276,104 @@ header .container {
     background-size: cover;
 }
 
+.card h5 {
+    color: #fff;
+    transition: .5s;
+}
+
+
+.card:hover {
+    transform: translateY(-3px);
+    opacity: .7;
+    transition: .5s;
+}
+
+.card h5 {
+    color: #fff;
+    transition: .5s;
+}
+
+.card:hover h5 {
+    color: var(--color-main-two);
+    transform: translateY(100px);
+    font-size: 20PX;
+}
+
+.cardsuica1 {
+    background: url(../img/Suiça1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardsuica1 p {
+    display: none;
+}
+
+.cardsuica2 {
+    background: url(../img/Suiça2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardsuica3 {
+    background: url(../img/Suiça3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardsuica4 {
+    background: url(../img/Suiça4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardny1 {
+    background: url(../img/NY1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardny2 {
+    background: url(../img/NY2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardny3 {
+    background: url(../img/NY3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardny4 {
+    background: url(../img/NY4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardchile1 {
+    background: url(../img/Chile1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardchile2 {
+    background: url(../img/Chile2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardchile3 {
+    background: url(../img/Chile3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardchile4 {
+    background: url(../img/Chile4.jpg);
+    background-position: center;
+    background-size: cover;
+}
 .container-btn {
     margin-top: 20px;
     padding: 12px 18px;

@@ -9,7 +9,7 @@ body {
 
 .About{
     background-image: url(../img/vista.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
        

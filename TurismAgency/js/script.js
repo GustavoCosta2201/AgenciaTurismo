@@ -8,12 +8,12 @@ const textCard = document.querySelector('p');
 const colorTitle = '#FFA500';
 
 card1.addEventListener('click', () =>{
-    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/pipa.jpg')";
+    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/Suiça1')";
     title.innerText = 'Pipa de Buggy';
     textCard.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate, repellendus provident. Soluta, id quis quas omnis, sed pariatur in officia perferendis, odit ea dolores minus accusamus vitae! Assumenda vero asperiores, tempore, incidunt consequuntur commodi';
 });
 card2.addEventListener('click', () =>{
-    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/NY.jpg')";
+    bg.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../img/Suiça1.jpg')";
     title.innerText = 'Nova York';
     textCard.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate, repellendus provident. Soluta, id quis quas omnis,'
 })
