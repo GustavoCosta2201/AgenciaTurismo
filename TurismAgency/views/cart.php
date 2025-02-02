@@ -53,9 +53,9 @@
 				die(print_r(sqlsrv_errors(), true));
 			}
 
-			$total = 0; // Inicialize o total como 0
+			$total = 0; 
 
-			// Loop através dos resultados da consulta e exiba cada viagem
+	
 			while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
 				echo "<tr>";
 				echo "<td>";
@@ -72,14 +72,13 @@
 				echo "<td>R$ " . number_format($row['VALOR'], 2, ',', '.') . "</td>";
 				echo "</tr>";
 
-				// Adicione o valor da viagem ao total
+
 				$total += $row['VALOR'];
 			}
 
-			// Calcule a taxa (5% do total)
 			$taxa = $total * 0.03;
 
-			// Calcule o total final (subtotal + taxa)
+
 			$totalFinal = $total + $taxa;
 
 			sqlsrv_free_stmt($stmt);

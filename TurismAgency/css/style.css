@@ -101,7 +101,7 @@ header .container {
     color: var(--color-main-two);
 }
 
-/* dropdown */
+
 
 .dropdown ul li{
     display: inline-block;
@@ -112,27 +112,21 @@ header .container {
 .dropdown ul li a{
     display: block;
     color: #fff; 
+
     
 }
 .dropdown{
     width: 100%;
     position: absolute;
     z-index: 999;
-    display: block;
+    display: none;
     
-    
-  
- 
-}
+ }
 
 
 .dropdownlist:hover .dropdown {
-    display: block;
-
-
+display: block;
 }
-
-
 
 
 .logo {

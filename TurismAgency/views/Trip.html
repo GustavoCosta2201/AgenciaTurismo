@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PR-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -39,16 +39,16 @@
 
 
 
-                        
-                        <li class="dropdownlist">
-                            <a href="#"><img src="../img/list.png" alt=""></a>
-                            <ul class="dropdown">
-                                <li><a href="#">Cadastrar País</a></li>
-                                <li><a href="#">Cadastrar Forma de Pagamento</a></li>
-                                <li><a href="#">teste</a></li>
-                            </ul>
-                        </li>
-                        
+
+                            <li class="dropdownlist">
+                                <a href="#"><img src="../img/list.png" alt=""></a>
+                                <ul class="dropdown">
+                                    <li><a href="../Relatório/Relatoriomes.php">Relatório Total Viagens</a></li>
+                                    <li><a href="../Relatório/RelatorioUltimos12.php">Relatório últimos 12 meses</a></li>
+                                    
+                                </ul>
+                            </li>
+
                     </ul>
                 </div>
             </div>
@@ -74,29 +74,33 @@
 
                 <div class="content">
                     <p class="mt-5 fs-3 text-uppercase">DESCUBRA O MUNDO ESCONDIDO</p>
-                    <h1 class="display-1 fw-bolder text-capitalize">Suiça</h1>
+                    <h1 class="display-1 fw-bolder text-capitalize" name="destino">Suiça</h1>
                     <div class="collum-right">
                         <div class="card cardsuica1">
-                            
+
                         </div>
                         <div class="card cardsuica2">
-                            
+
                         </div>
                         <div class="card cardsuica3">
-                            
+
                         </div>
                         <div class="card cardsuica4">
-                            
+
                         </div>
 
-                        <form action="" class="form-trip">
-                            <label class="form-label" for="">Check-in</label>
-                            <input class="form-inpt" type="date">
-                            <label class="form-label" for="">Check-out</label>
-                            <input class="form-inpt" type="date">
+                        <form action="../php/InsertViagem.php" method="post" class="form-trip">
+                            <label class="form-label" for="checkin">Check-in</label>
+                            <input class="form-inpt" type="date" name="checkin">
+                            <label class="form-label" for="checkout">Check-out</label>
+                            <input class="form-inpt" type="date" name="checkout">
 
+                            <input type="hidden" name="valor" value="4900">
+                            <input type="hidden" name="destino" value="Suiça">
+                            <button value="botao" name="botaum" class="btn-trip">Venha descobrir e Explorar R$ <strong
+                                    name="valor">4.900</strong></button>
                         </form>
-                        <button class="btn-trip">Venha descobrir e Explorar R$ 4.900</button>
+
                     </div>
 
                 </div>
@@ -113,28 +117,33 @@
 
             <div class="content">
                 <p class="mt-5 fs-3 text-uppercase">DESCUBRA O MUNDO ESCONDIDO</p>
-                <h1 class="display-1 fw-bolder text-capitalize">New york</h1>
+                <h1 class="display-1 fw-bolder text-capitalize" name="destino">New york</h1>
                 <div class="collum-right">
                     <div class="card cardny1">
-                        
+
                     </div>
                     <div class="card cardny2">
-                        
+
                     </div>
                     <div class="card cardny3">
-                        
+
                     </div>
                     <div class="card cardny4">
-                        
-                    </div>
-                    <form action="" class="form-trip">
-                        <label class="form-label" for="">Check-in</label>
-                        <input class="form-inpt" type="date">
-                        <label class="form-label" for="">Check-out</label>
-                        <input class="form-inpt" type="date">
 
+                    </div>
+                    <form action="../php/InsertViagem.php" method="post" class="form-trip">
+                        <label class="form-label" for="checkin">Check-in</label>
+                        <input class="form-inpt" type="date" name="checkin">
+                        <label class="form-label" for="checkout">Check-out</label>
+                        <input class="form-inpt" type="date" name="checkout">
+                        
+                        <input type="hidden" name="valor" value="5020">
+                        <input type="hidden" name="destino" value="New York">
+
+                        <button value="botao" name="botaum" class="btn-trip">Venha descobrir e Explorar R$ <strong
+                                name="valor">5.020</strong></button>
                     </form>
-                    <button class="btn-trip">Venha descobrir e Explorar R$ 5.020</button>
+
                 </div>
 
             </div>
@@ -149,29 +158,33 @@
             </div>
 
             <div class="content">
-                <p class="mt-5 fs-3 text-uppercase" name="destino" >DESCUBRA O MUNDO ESCONDIDO</p>
+                <p class="mt-5 fs-3 text-uppercase" name="destino">DESCUBRA O MUNDO ESCONDIDO</p>
                 <h1 class="display-1 fw-bolder text-capitalize">Chile</h1>
                 <div class="collum-right">
                     <div class="card cardchile1">
-                        
+
                     </div>
                     <div class="card cardchile2">
-                        
+
                     </div>
                     <div class="card cardchile3">
-                        
+
                     </div>
                     <div class="card cardchile4">
-                        
+
                     </div>
                     <form action="../php/InsertViagem.php" method="post" class="form-trip">
                         <label class="form-label" for="checkin">Check-in</label>
                         <input class="form-inpt" type="date" name="checkin">
                         <label class="form-label" for="checkout">Check-out</label>
                         <input class="form-inpt" type="date" name="checkout">
-
+                        <button value="botao" name="botaum" class="btn-trip">Venha descobrir e Explorar R$ <strong
+                                name="valor">8.500</strong></button>
+                                
+                            <input type="hidden" name="valor" value="8500">
+                            <input type="hidden" name="destino" value="Chile">
                     </form>
-                    <button value="botao"  name="botaum"  class="btn-trip">Venha descobrir e Explorar R$ <strong name="valor" >8.500</strong></button>
+
                 </div>
             </div>
         </div>
